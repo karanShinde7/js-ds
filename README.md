@@ -2,4 +2,8 @@
 
 1. Stack
     i. Array
-    ii. Linked list
+    ii. Linked List
+
+2. Queue
+    i. Array
+    ii. Linked List
