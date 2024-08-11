@@ -13,7 +13,6 @@ class StackLinkedList {
     this.topEle = newNode;
     this.length = 1;
     this.array.push(newNode);
-
   }
 
   push(value) {
@@ -23,7 +22,7 @@ class StackLinkedList {
     if (this.length === 0) {
       this.topEle = newNodeEle;
     } else {
-        // if not empty push in next node
+      // if not empty push in next node
       newNodeEle.next = newNodeEle;
       this.topEle = newNodeEle;
     }
@@ -53,10 +52,10 @@ class StackLinkedList {
   isEmpty() {
     return this.length === 0;
   }
-  
-  printStack(){
-    for(let i=0; i<this.length;i++){
-        console.log("| "+this.array[i]+" |->")
+
+  printStack() {
+    for (let i = 0; i < this.length; i++) {
+      console.log("| " + this.array[i] + " |->");
     }
   }
 }
@@ -65,7 +64,7 @@ const stackOp = new StackLinkedList("Zero");
 stackOp.push("One");
 stackOp.push("Second");
 stackOp.push("Third");
-console.log("printStack",stackOp.printStack())
+console.log("printStack", stackOp.printStack());
 console.log("Top Value: ", stackOp.peek());
 console.log("Is Stack Empty: ", stackOp.isEmpty());
 console.log("Get Top value using pop: ", stackOp.pop());
